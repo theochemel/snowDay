@@ -7,19 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29670203206962310031484E /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29670202206962310031484E /* Forecast.swift */; };
-		29670205206964470031484E /* PullDarkSkyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29670204206964470031484E /* PullDarkSkyForecast.swift */; };
 		29CCC23920692262003156F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCC23820692262003156F5 /* AppDelegate.swift */; };
 		29CCC23B20692262003156F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCC23A20692262003156F5 /* ViewController.swift */; };
 		29CCC23E20692262003156F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCC23C20692262003156F5 /* Main.storyboard */; };
 		29CCC24020692262003156F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CCC23F20692262003156F5 /* Assets.xcassets */; };
 		29CCC24320692262003156F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCC24120692262003156F5 /* LaunchScreen.storyboard */; };
-		29CCC24B20692279003156F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCC24A20692279003156F5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		29670202206962310031484E /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
-		29670204206964470031484E /* PullDarkSkyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullDarkSkyForecast.swift; sourceTree = "<group>"; };
 		29CCC23520692262003156F5 /* snowDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snowDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CCC23820692262003156F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29CCC23A20692262003156F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +22,6 @@
 		29CCC23F20692262003156F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29CCC24220692262003156F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CCC24420692262003156F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29CCC24A20692279003156F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				29CCC23820692262003156F5 /* AppDelegate.swift */,
-				29CCC24A20692279003156F5 /* Constants.swift */,
 				29CCC23A20692262003156F5 /* ViewController.swift */,
-				29670202206962310031484E /* Forecast.swift */,
-				29670204206964470031484E /* PullDarkSkyForecast.swift */,
 				29CCC23C20692262003156F5 /* Main.storyboard */,
 				29CCC23F20692262003156F5 /* Assets.xcassets */,
 				29CCC24120692262003156F5 /* LaunchScreen.storyboard */,
@@ -145,11 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29670203206962310031484E /* Forecast.swift in Sources */,
 				29CCC23B20692262003156F5 /* ViewController.swift in Sources */,
 				29CCC23920692262003156F5 /* AppDelegate.swift in Sources */,
-				29CCC24B20692279003156F5 /* Constants.swift in Sources */,
-				29670205206964470031484E /* PullDarkSkyForecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
