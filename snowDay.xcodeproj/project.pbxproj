@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29558EBF207C34EE004C9659 /* stormForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29558EBE207C34EE004C9659 /* stormForecast.swift */; };
+		29558EC2207C37B2004C9659 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29558EC1207C37B2004C9659 /* CoreLocation.framework */; };
+		296305532081154C0006390A /* testJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296305522081154C0006390A /* testJSON.swift */; };
 		29CCC23920692262003156F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCC23820692262003156F5 /* AppDelegate.swift */; };
 		29CCC23B20692262003156F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CCC23A20692262003156F5 /* ViewController.swift */; };
 		29CCC23E20692262003156F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCC23C20692262003156F5 /* Main.storyboard */; };
 		29CCC24020692262003156F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CCC23F20692262003156F5 /* Assets.xcassets */; };
 		29CCC24320692262003156F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CCC24120692262003156F5 /* LaunchScreen.storyboard */; };
+		29D3859F207D9627005F761F /* pullForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3859E207D9627005F761F /* pullForecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29558EBE207C34EE004C9659 /* stormForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stormForecast.swift; sourceTree = "<group>"; };
+		29558EC1207C37B2004C9659 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		296305522081154C0006390A /* testJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testJSON.swift; sourceTree = "<group>"; };
 		29CCC23520692262003156F5 /* snowDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snowDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CCC23820692262003156F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29CCC23A20692262003156F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		29CCC23F20692262003156F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29CCC24220692262003156F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CCC24420692262003156F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29D3859E207D9627005F761F /* pullForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pullForecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29558EC2207C37B2004C9659 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29558EC0207C37B2004C9659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29558EC1207C37B2004C9659 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		29CCC22C20692262003156F5 = {
 			isa = PBXGroup;
 			children = (
 				29CCC23720692262003156F5 /* snowDay */,
 				29CCC23620692262003156F5 /* Products */,
+				29558EC0207C37B2004C9659 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,9 @@
 			children = (
 				29CCC23820692262003156F5 /* AppDelegate.swift */,
 				29CCC23A20692262003156F5 /* ViewController.swift */,
+				296305522081154C0006390A /* testJSON.swift */,
+				29558EBE207C34EE004C9659 /* stormForecast.swift */,
+				29D3859E207D9627005F761F /* pullForecast.swift */,
 				29CCC23C20692262003156F5 /* Main.storyboard */,
 				29CCC23F20692262003156F5 /* Assets.xcassets */,
 				29CCC24120692262003156F5 /* LaunchScreen.storyboard */,
@@ -137,7 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				29CCC23B20692262003156F5 /* ViewController.swift in Sources */,
+				296305532081154C0006390A /* testJSON.swift in Sources */,
+				29D3859F207D9627005F761F /* pullForecast.swift in Sources */,
 				29CCC23920692262003156F5 /* AppDelegate.swift in Sources */,
+				29558EBF207C34EE004C9659 /* stormForecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
