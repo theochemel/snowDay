@@ -13,3 +13,16 @@ let testJSON = """
 """
 
 let testJSONData = testJSON.data(using: String.Encoding.utf8)
+
+struct ServerResponse: Codable {
+    var timeForecastRecieved: Int
+    var stormPossible: Bool
+    var startTime: Int
+    var endTime: Int
+    var peakIntensity: Float
+    var peakIntensityTime: Int
+    var totalAccumulation: Float
+    var averageProbability: Float
+    var precipInfo: [Float]
+}
+

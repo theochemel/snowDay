@@ -70,9 +70,21 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLe-15-Ody" userLabel="graphView">
                                 <rect key="frame" x="16" y="325" width="343" height="220"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weo-g4-2DG">
+                                        <rect key="frame" x="10" y="198" width="323" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="SpA-x0-rTZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="WzD-Dj-Thq"/>
+                                    <constraint firstAttribute="trailing" secondItem="weo-g4-2DG" secondAttribute="trailing" constant="10" id="a5H-n8-WKi"/>
+                                    <constraint firstAttribute="bottom" secondItem="weo-g4-2DG" secondAttribute="bottom" constant="20" id="hcA-oI-K1q"/>
+                                    <constraint firstItem="weo-g4-2DG" firstAttribute="leading" secondItem="xLe-15-Ody" secondAttribute="leading" constant="10" id="oCt-71-r8i"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -102,6 +114,7 @@
                     <connections>
                         <outlet property="firstDivider" destination="dzl-nN-DF2" id="Uxy-z1-xmY"/>
                         <outlet property="forecastLabel" destination="NW7-yk-rno" id="vDx-Y0-FpA"/>
+                        <outlet property="graphLine" destination="weo-g4-2DG" id="ueC-Fn-TdM"/>
                         <outlet property="graphView" destination="xLe-15-Ody" id="MRt-oT-7ck"/>
                         <outlet property="headerView" destination="8kt-B0-ZQg" id="cSO-87-gxw"/>
                         <outlet property="locationButton" destination="y99-g6-BC0" id="2yd-lZ-ull"/>
