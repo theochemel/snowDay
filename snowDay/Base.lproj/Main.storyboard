@@ -18,15 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kt-B0-ZQg">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kt-B0-ZQg">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y99-g6-BC0">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y99-g6-BC0">
                                         <rect key="frame" x="8" y="39" width="359" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Marblehead, MA">
                                             <color key="titleColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="locationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbj-fJ-NFH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,7 +39,7 @@
                                     <constraint firstItem="y99-g6-BC0" firstAttribute="leading" secondItem="8kt-B0-ZQg" secondAttribute="leading" constant="8" id="aVs-J8-J5G"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="87%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxk-wu-aVL">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="87%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxk-wu-aVL">
                                 <rect key="frame" x="16" y="114" width="343" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="DYw-o9-D5H"/>
@@ -45,7 +48,7 @@
                                 <color key="textColor" red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3-6 in. of snow tomorrow, from 5:00 AM to 6:00 PM" textAlignment="right" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NW7-yk-rno">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3-6 in. of snow tomorrow, from 5:00 AM to 6:00 PM" textAlignment="right" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NW7-yk-rno">
                                 <rect key="frame" x="16" y="208" width="343" height="74"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="74" id="xBx-IO-Si8"/>
@@ -54,7 +57,7 @@
                                 <color key="textColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzl-nN-DF2">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzl-nN-DF2">
                                 <rect key="frame" x="80" y="303" width="279" height="2"/>
                                 <color key="backgroundColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -71,7 +74,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLe-15-Ody" userLabel="graphView">
                                 <rect key="frame" x="16" y="325" width="343" height="220"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weo-g4-2DG">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weo-g4-2DG">
                                         <rect key="frame" x="10" y="198" width="323" height="2"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>

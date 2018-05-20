@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
     var barHeights = [UIView: CGFloat]()
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var locationButton: UIButton!
@@ -20,14 +20,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var graphLine: UIView!
     
     
+    @IBAction func locationButtonPressed(_ sender: Any) {
+        locationManager.requestLocation()
+    }
+    
+    let locationManager: CLLocationManager = CLLocationManager()
+    
     
     override func viewDidLoad() {
-        
-        let precipValues = [0.05, 0.15, 0.3, 0.45, 0.63, 0.98, 0.96, 0.64, 0.61, 0.64, 0.63, 0.25]
 
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        
+        if CLLocationManager.authorizationStatus() == .notDetermined {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        locationManager.requestLocation()
+        
+        
+        
         super.viewDidLoad()
-        var currentLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(43.923, -70)
-        pullForecast(location: currentLocation)
+
+
         
         
         setupShadows(view: headerView, opacity: 1, radius: 10, offset: CGSize.zero)
@@ -53,6 +68,25 @@ class ViewController: UIViewController {
 
     }
     
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status != .authorizedWhenInUse {
+            locationManager.requestLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if locations.first != nil {
+            print("location:: \(locations.first!.coordinate)")
+            locationButton.isHidden = false
+            headerView.isHidden = false
+            locationButton.setTitle("\(locations.first!.coordinate.latitude.rounded()), \(locations.first!.coordinate.longitude.rounded())", for: .normal)
+            pullForecast(location: locations.first!.coordinate)
+        }
+    }
     
     
     
@@ -121,6 +155,7 @@ class ViewController: UIViewController {
         if serverResponse.stormPossible == true {
             percentChanceLabel.text = String(serverResponse.averageProbability)
             forecastLabel.text = String(serverResponse.totalAccumulation) + "inches of snow expected"
+            graphLine.isHidden = false
         } else {
             percentChanceLabel.text = "0%"
             forecastLabel.text = "No Storm Expected"
